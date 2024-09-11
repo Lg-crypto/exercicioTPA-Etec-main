@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.2s ease-in-out;
+    --distance: 3px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(61deg,#0A6B8A,#112457);
+}
+a{
+    color: #faebd7;
+    text-decoration: none;
+}
+svg{
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+}
+#icon:hover{
+    filter: drop-shadow(var(--distance) var(--distance) #09dbbf);
+    cursor: pointer;
+    svg{
+        position: relative;
+        bottom: var(--distance);
+        right: var(--distance);
+    }
+}
+button{
+    width: none;
+    height: none;
+    border: none;
+}
+#container{
+    width: 100%;
+    height: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    color: #faebd7;
+    height: 50px;
+    padding: 10px;
+}
+header *{
+    margin: 5px;
+}
+header nav{
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+header a{
+    color: #faebd7;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.2s ease-in-out;
+}
+header a:hover{
+    color: #09dbbf;
+}
+header #experience{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#exercicios{
+    list-style: none;
+    min-width: 120px;
+    max-height: 100px;
+    overflow: auto;
+    position: absolute;
+    top: 30px;
+    border: 1px solid #09dbbf;
+    border-radius: 5px;
+}
+#exercicios::-webkit-scrollbar{
+    width: 5px;
+}
+#exercicios::-webkit-scrollbar-thumb{
+    background-color: #09dbbf;
+    border-radius: 2px;
+}
+main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#typing{
+    font-size: 18px;
+    width: 14ch;
+    color: #09dbbf;
+    font-family: monospace;
+    border-right: 5px solid #09dbbf;
+    overflow: hidden;
+    animation: typing 2s steps(14), blip 1s infinite;
+    white-space: nowrap;
+}
+
+#h1-name{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccd6f6;
+}
+
+h2{
+    color: #8892b0;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#button-cont{
+    margin-top: 50px;
+}
+
+button{
+    color: #09dbbf;
+    position: relative;
+    font-weight: 300;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #09dbbf;
+    background-color: transparent;
+    transition: 0.1s ease-in-out;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+button a{
+    color: #09dbbf;
+}
+button:hover{
+    box-shadow: 5px 5px #09dbbf;
+    top: -5px;
+    left: -5px;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }to{
+        width: 14ch;
+    }
+}
+@keyframes blip {
+    from{
+        border-right-color: transparent;
+    }
+}
