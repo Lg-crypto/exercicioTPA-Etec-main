@@ -86,14 +86,15 @@ main{
 #img-profile{
     border-right: 2px solid #faebd7;
     margin: 5px;
+    position: relative;
 }
+
 #h-img{
     border: 1px solid #faebd7;
     border-radius: 50%;
     margin: 5px;
     width: 300px;
 }
-
 #profile-cont{
     margin-top: 10%;
     display: flex;
