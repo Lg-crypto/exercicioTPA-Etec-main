@@ -95,6 +95,7 @@ main{
 }
 
 #profile-cont{
+    margin-top: 10%;
     display: flex;
     width: max-content;
 }
@@ -120,10 +121,17 @@ h2{
     display: grid;
     gap: 10px;
 }
+
 .lang-card{
     display: flex;
     background-color: #1d1a1a;
     width: 150px;
+}
+.lang-card:hover{
+    background-color: #faebd7;
+    span{
+        color: #252320;
+    }
 }
 .lang-card svg{
     margin: 0 5px;
@@ -198,6 +206,9 @@ h2{
     }
 }
 @media (width < 1020px) {
+    header nav {
+        display: grid;
+    }
     #img-profile{
         display: flex;
         justify-content: center;
@@ -210,5 +221,8 @@ h2{
     }
     #language-cards{
         display: flex;
+    }
+    #chart{
+        size: 200px 100px;
     }
 }
