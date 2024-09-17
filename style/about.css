@@ -66,6 +66,7 @@ header #experience{
     top: 30px;
     border: 1px solid #09dbbf;
     border-radius: 5px;
+    background: #122f67;
 }
 #exercicios::-webkit-scrollbar{
     width: 5px;
