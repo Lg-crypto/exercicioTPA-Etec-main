@@ -60,8 +60,7 @@ header #experience{
 }
 #exercicios{
     list-style: none;
-    min-width: 120px;
-    max-height: 100px;
+    min-width: max-content;
     overflow: auto;
     position: absolute;
     top: 30px;
